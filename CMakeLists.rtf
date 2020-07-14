@@ -9,9 +9,5 @@
 project(RISCV)\
 \
 set(CMAKE_CXX_STANDARD 14)\
-\
-add_library(RISCV_library STATIC src/BitOperation.cpp src/BitOperation.h src/BTB.cpp src/BTB.h src/Execution.cpp src/Execution.h src/InstructionDecode.cpp src/InstructionDecode.h src/InstructionFetch.cpp src/InstructionFetch.h src/Memory.h src/MemoryAccess.cpp src/MemoryAccess.h src/Pipeline.cpp src/Pipeline.h src/Register.h src/WriteBack.cpp src/WriteBack.h)\
-\
-add_executable(code src/main.cpp)\
-\
-target_link_libraries(code RISCV_library)}
+set(CMAKE_CXX_FLAGS \'93-Wall -O3 -std=c++11 -g\'94)\
+add_executable(code main.cpp)}
