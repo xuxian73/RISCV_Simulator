@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 cmake_minimum_required(VERSION 3.10)\
+project(RISCV)\
+\
+set(CMAKE_CXX_STANDARD 14)\
+\
+add_library(RISCV_library STATIC src/BitOperation.cpp src/BitOperation.h src/BTB.cpp src/BTB.h src/Execution.cpp src/Execution.h src/InstructionDecode.cpp src/InstructionDecode.h src/InstructionFetch.cpp src/InstructionFetch.h src/Memory.h src/MemoryAccess.cpp src/MemoryAccess.h src/Pipeline.cpp src/Pipeline.h src/Register.h src/WriteBack.cpp src/WriteBack.h)\
+\
+add_executable(code src/main.cpp)\
+\
+target_link_libraries(code RISCV_library)}
