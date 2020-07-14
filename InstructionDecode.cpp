@@ -30,7 +30,6 @@ void InstructionDecode::TypeU() {
     rd = get_digit_from(i, 11, 7);
     imm = get_digit_from(i, 31, 12);
     imm <<= 12;
-    
     T = InsT::U;
 }
 
@@ -112,6 +111,10 @@ void InstructionDecode::solveI() {
     if (rs1 == pip->EXE->rd and pip->EXE->opcode != 0b1100011 and pip->EXE->opcode != 0b0100011) {
         if (pip->EXE->opcode != 0b0000011) {
             v1 = pip->EXE->exe_val;
+        } else {
+            if (opcode == 0b1100111) {
+                v1 = pip->mem.load_word(pip->EXE->exe_val);
+            }
         }
         return;
     }

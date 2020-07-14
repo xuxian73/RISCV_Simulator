@@ -25,9 +25,8 @@ void Execution::update() {
 void Execution::TypeU(){
     if (opcode == 0b0110111) {
         exe_val = imm;
-        
     } else {
-        exe_val = imm;
+        exe_val = imm + PC;
 //        pip->ID->i = pip->mem.fetch_instruction(pip->ID->PC);
     }
 }
