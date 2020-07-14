@@ -20,7 +20,7 @@ public:
             modify[i] = false;
     }
     
-    int & operator[](size_t ind) {
+    int & operator[](int ind) {
         return reg[ind];
     }
     
