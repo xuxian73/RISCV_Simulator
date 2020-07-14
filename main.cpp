@@ -19,7 +19,7 @@
 #include "WriteBack.h"
 
 Pipeline pip;
-void runtest(const char* path) {
+/* void runtest(const char* path) {
     pip.mem.init(path);
     while (true) {
         pip.WB->update();
@@ -47,7 +47,7 @@ void runtest(const char* path) {
     printf("%d\n",((unsigned int)pip.reg[pip.MEM->rd]) & 255u);
 //  pip.pred.print_success_rate();
 }
-
+*/
 void runtest() {
     pip.mem.init();
     
