@@ -11,6 +11,7 @@
 
 #include <fstream>
 #include <cstdio>
+#include <memory.h>
 typedef unsigned Immediate;
 class Memory {
     int32_t hex(char& ch) {
@@ -24,7 +25,7 @@ public:
         memset(Mem, 0, 0x400000);
     }
     
-    void init(const char *path) {   //read from file
+/*    void init(const char *path) {   //read from file
         unsigned cur = 0;
         std::fstream in(path);
         while ( in ) {
@@ -50,7 +51,7 @@ public:
             }
         }
     }
-    
+*/
     void init() {   //read from console
         unsigned cur = 0;
         char s[16];

@@ -12,7 +12,7 @@
 #include <cassert>
 class Register {
 public:
-    int32_t reg[32];
+    int reg[32];
     bool modify[32];
     Register() {
         reg[0] = 0;
@@ -20,7 +20,7 @@ public:
             modify[i] = false;
     }
     
-    int32_t & operator[](size_t ind) {
+    int & operator[](size_t ind) {
         return reg[ind];
     }
     
