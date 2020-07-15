@@ -5,15 +5,11 @@ A trivial RISCV_Simulator. Implement forwarding scheme to solve data hazard. Imp
 
 This simulator minimize the data hazard stall by forwarding.
 
-![image-20200715094554248](/Users/xuxian/Library/Application Support/typora-user-images/image-20200715094554248.png)
-
-[picture source] Computer Architecture: A Quantitative Approach, 5th edition
+![](/Users/xuxian/Library/Application Support/typora-user-images/image-20200715094554248.png)
 
 ## Branch Prediction
 
-![2-bit prediction scheme](/Users/xuxian/Library/Application Support/typora-user-images/image-20200715090928908.png)
-
-[picture source]: Computer Architecture: A Quantitative Approach, 5th edition
+![](/Users/xuxian/Library/Application Support/typora-user-images/image-20200715090928908.png)
 
 ### Predicition Success Rate test
 
